@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y wget ca-certificates \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --upgrade pip && pip3 install tensorflow && \
-    pip3 install numpy pandas sklearn matplotlib seaborn jupyter pyyaml h5py && \
+    pip3 install numpy pandas sklearn matplotlib seaborn jupyter pyyaml h5py tqdm && \
     pip3 install pymldb && \
     pip3 install keras --no-deps && \
     pip3 install imutils
